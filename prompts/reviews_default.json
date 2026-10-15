@@ -1,0 +1,7 @@
+{
+  "instruction": "Write a short summary (3-5 sentences) of what the reviews below say, answering the question. Use only information from the reviews. Cite every claim with the number of the review(s) it comes from, e.g. [1] or [2][3]. Write the summary as one paragraph.",
+  "demo_sep": "\n\n\n",
+  "demo_prompt": "{INST}\n\nQuestion: {Q}\n\n{D}\nSummary: {A}",
+  "doc_prompt": "Review [{ID}]: {P}\n",
+  "demos": []
+}
