@@ -1,0 +1,12 @@
+chromadb==0.3.23
+pydantic<2
+numpy
+pandas
+scipy
+scikit-learn
+torch
+sentence-transformers
+transformers
+accelerate
+rouge-score
+pytest

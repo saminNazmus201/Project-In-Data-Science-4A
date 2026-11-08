@@ -1,0 +1,86 @@
+{
+    "evaluation_notes": {
+        "total_hotel_aspect_cases": 100,
+        "methods": [
+            "Top-K",
+            "MMR",
+            "Proportional"
+        ],
+        "expected_rows": 300,
+        "sentiment_labels": [
+            "positive",
+            "neutral",
+            "negative"
+        ],
+        "sentiment_source": "Rating-based sentiment labels from the prepared SPACE dataset.",
+        "sentiment_js_distance": "Measures how closely selected-review sentiment distribution matches the retrieved-candidate distribution. Lower is closer; the candidate distribution is a baseline, not ground-truth hotel opinion distribution.",
+        "average_relevance": "Mean original retrieval relevance score of selected reviews. The same candidate scores are used for all methods.",
+        "semantic_diversity": "Mean pairwise cosine distance between selected review embeddings. Higher generally indicates more diversity.",
+        "scope": "Selection-only evaluation; no generated summaries are evaluated in this script."
+    },
+    "overall": {
+        "number_of_cases": 300,
+        "Top-K": {
+            "sentiment_js_distance": 0.2488905322937219,
+            "average_relevance": 0.539347838640213,
+            "semantic_diversity": 0.4002193522453308,
+            "number_of_cases": 100
+        },
+        "MMR": {
+            "sentiment_js_distance": 0.25319468192971095,
+            "average_relevance": 0.5136165387630461,
+            "semantic_diversity": 0.4897387570142746,
+            "number_of_cases": 100
+        },
+        "Proportional": {
+            "sentiment_js_distance": 0.23034711203463182,
+            "average_relevance": 0.5287936729192734,
+            "semantic_diversity": 0.35427309840917587,
+            "number_of_cases": 100
+        }
+    },
+    "by_aspect": {
+        "cleanliness": {
+            "number_of_cases": 150,
+            "Top-K": {
+                "sentiment_js_distance": 0.27307802177449114,
+                "average_relevance": 0.5557368063926696,
+                "semantic_diversity": 0.39132480800151825,
+                "number_of_cases": 50
+            },
+            "MMR": {
+                "sentiment_js_distance": 0.28612539469668197,
+                "average_relevance": 0.526726450920105,
+                "semantic_diversity": 0.4856847161054611,
+                "number_of_cases": 50
+            },
+            "Proportional": {
+                "sentiment_js_distance": 0.24168418690334523,
+                "average_relevance": 0.5458750820159913,
+                "semantic_diversity": 0.3526516050100327,
+                "number_of_cases": 50
+            }
+        },
+        "service": {
+            "number_of_cases": 150,
+            "Top-K": {
+                "sentiment_js_distance": 0.22470304281295272,
+                "average_relevance": 0.5229588708877564,
+                "semantic_diversity": 0.40911389648914337,
+                "number_of_cases": 50
+            },
+            "MMR": {
+                "sentiment_js_distance": 0.22026396916273985,
+                "average_relevance": 0.5005066266059874,
+                "semantic_diversity": 0.49379279792308806,
+                "number_of_cases": 50
+            },
+            "Proportional": {
+                "sentiment_js_distance": 0.2190100371659184,
+                "average_relevance": 0.5117122638225555,
+                "semantic_diversity": 0.3558945918083191,
+                "number_of_cases": 50
+            }
+        }
+    }
+}

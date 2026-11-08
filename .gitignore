@@ -6,3 +6,14 @@ __pycache__/
 data/raw/
 data/processed/
 results/.venv312/
+
+# large or re-creatable SPACE files (keep the small selection results)
+data/space/space_summ.json
+data/space/processed/space_chroma_db/
+data/space/processed/space_prepared.json
+results/eval/speedtest.json
+results/eval/generation.log
+results/user_study/key.json
+.pytest_cache/
+results/eval/summaries_*.json
+results/eval/*.log
